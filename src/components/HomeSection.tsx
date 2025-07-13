@@ -19,7 +19,7 @@ export default function HomeSection() {
               Một lập trình viên
               <span className="text-[#1cbe59]"> Fontend</span>
             </p>
-            <p className="lg:mb-[42px] text-muted dark:text-white mb-[30px] text-base text-center lg:text-left xl:text-[23px] leading-[1.5] max-w-[640px] mx-auto lg:ml-0">
+            <p className="lg:mb-[42px] text-gray-500 text-base text-center lg:text-left xl:text-[23px] leading-[1.5] max-w-[640px] mx-auto lg:ml-0">
               Tôi tên là Biện Thanh Nhựt, tốt nghiệp chuyên ngành Công nghệ Phần
               mềm tại Đại học Công Thương TP. Hồ Chí Minh. tôi đã có 2 năm kinh
               nghiệm làm việc trong lĩnh vực phát triển ứng dụng di động, đặc
