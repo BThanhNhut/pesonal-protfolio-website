@@ -46,11 +46,13 @@ export default function AboutSection() {
                 Tôi là một lập trình viện fontend
               </p>
               <h3 className="md:text-[48px] text-[35px] leading-[1.25] mt-1.5">
-                I Can Design Anything You Want
+                Đây là một số thông tin về tôi
               </h3>
             </div>
             <p className="text-muted dark:text-darkmuted lg:max-w-[485px] leading-[30px] mb-[47px]">
-              xin chào tôi là một nhà thiết kế web và mobile
+              Tốt nghiệp chuyên ngành Công nghệ Phần mềm tại Đại học Công Thương
+              TP. Hồ Chí Minh. tôi đã có 2 năm kinh nghiệm làm việc trong lĩnh
+              vực phát triển ứng dụng di động, đặc biệt là với React Native.
             </p>
             <a href="#contact" className="btn-custom">
               Hire Me
