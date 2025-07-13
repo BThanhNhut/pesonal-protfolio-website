@@ -1,10 +1,8 @@
 import "./globals.css";
 import "../../public/assets/css/style.css";
-import { Roboto } from "next/font/google";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+// import { Roboto } from "next/font/google";
 
-const roboto = Roboto({ subsets: ["vietnamese"], weight: ["100", "900"] });
+// const roboto = Roboto({ subsets: ["vietnamese"], weight: ["100", "900"] });
 
 export default function RootLayout({
   children,
