@@ -1,9 +1,16 @@
-"use client";
+import AboutSection from "@/components/AboutSection";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import HomeSection from "@/components/HomeSection";
 
 export default function Home() {
   return (
-    <main>
-      <div>Xin chao</div>
-    </main>
+    <>
+      <Header />
+      <HomeSection></HomeSection>
+      <AboutSection />
+      <Footer />
+      <div>xinchao</div>
+    </>
   );
 }

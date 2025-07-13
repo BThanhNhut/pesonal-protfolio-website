@@ -1,5 +1,5 @@
 import "./globals.css";
-import "../../public/assets/main.css";
+import "../../public/assets/css/style.css";
 import { Roboto } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -13,11 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
