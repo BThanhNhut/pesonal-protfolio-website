@@ -43,16 +43,14 @@ export default function AboutSection() {
           <div className="text-center md:text-left">
             <div className="mb-[25px] lg:max-w-[440px]">
               <p className="text-custom text-xl md:text-2xl font-medium font-secondary">
-                I'm a Designer
+                Tôi là một lập trình viện fontend
               </p>
               <h3 className="md:text-[48px] text-[35px] leading-[1.25] mt-1.5">
                 I Can Design Anything You Want
               </h3>
             </div>
             <p className="text-muted dark:text-darkmuted lg:max-w-[485px] leading-[30px] mb-[47px]">
-              Hello there! I'm a web designer, very passionate and dedicated.
-              With 20 years experience as a professional web developer, I have
-              the skills to make your project a success.
+              xin chào tôi là một nhà thiết kế web và mobile
             </p>
             <a href="#contact" className="btn-custom">
               Hire Me
