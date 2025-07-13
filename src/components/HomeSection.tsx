@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomeSection() {
   return (
@@ -25,30 +26,26 @@ export default function HomeSection() {
               nghiệm làm việc trong lĩnh vực phát triển ứng dụng di động, đặc
               biệt là với React Native.
             </p>
-            <div className="flex items-center justify-center lg:justify-start gap-[25px]">
+
+            <div className="flex items-center justify-center lg:justify-start gap-[25px] mt-5">
               <a href="#about" className="btn-custom relative">
                 About Me
               </a>
               <ul className="flex items-center gap-2">
                 <li>
-                  <a href="#">
-                    <i className="icon-facebook-1"></i>
-                  </a>
+                  <Link href={"https://www.facebook.com/nhut.bien.77"}>
+                    <i className="icon-facebook-1 text-blue-600"></i>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="icon-twitter-1"></i>
-                  </a>
+                  <Link href="https://github.com/BThanhNhut">
+                    <i className="icon-github-1"></i>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="icon-linkedin-1"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="icon-behance"></i>
-                  </a>
+                  <Link href="https://www.linkedin.com/in/bien-thanh-nhut/">
+                    <i className="icon-linkedin-1 text-blue-600"></i>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -90,7 +87,7 @@ export default function HomeSection() {
                 alt="ts"
               />
             </span>
-            <span className="left-[200px] shadow-[24px_0px_72px_rgb(54,32,152,0.3)] bottom-10 hidden lg:flex items-center rounded-lg bg-white w-[75px] h-[75px] absolute anim_moveBottom">
+            <span className="left-[500px] shadow-[24px_0px_72px_rgb(54,32,152,0.3)] bottom-10 hidden lg:flex items-center rounded-lg bg-white w-[75px] h-[75px] absolute anim_moveBottom">
               <Image
                 width={75}
                 height={75}
@@ -99,7 +96,7 @@ export default function HomeSection() {
                 alt="Figma"
               />
             </span>
-            <span className="left-[300px] shadow-[24px_0px_72px_rgb(54,32,152,0.3)] bottom-20 hidden lg:flex items-center rounded-lg bg-white w-[75px] h-[75px] absolute anim_moveBottom">
+            <span className="left-[450px] shadow-[24px_0px_72px_rgb(54,32,152,0.3)] top-60 hidden lg:flex items-center rounded-lg bg-white w-[75px] h-[75px] absolute anim_moveBottom">
               <Image
                 width={75}
                 height={75}

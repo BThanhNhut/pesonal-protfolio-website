@@ -10,7 +10,7 @@ export default function Header() {
             <div className="justify-between items-center flex w-full">
               <div className="z-50 relative">
                 <Link href="/">
-                  <img
+                  {/* <img
                     src="assets/img/logo/logo.png"
                     className="lg:max-w-[150px] max-w-[90px] dark:hidden"
                     alt=""
@@ -19,7 +19,7 @@ export default function Header() {
                     src="assets/img/logo/dark.png"
                     className="lg:max-w-[150px] max-w-[90px] hidden dark:block"
                     alt=""
-                  />
+                  /> */}
                 </Link>
               </div>
               <div>

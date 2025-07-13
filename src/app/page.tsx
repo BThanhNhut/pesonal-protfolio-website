@@ -37,7 +37,9 @@ export default function Home() {
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
-              <AlertDialogCancel>Tôi đã biết</AlertDialogCancel>
+              <AlertDialogCancel className="hover:bg-brand-primary hover:text-white  border-brand-primary text-brand-primary">
+                Tôi đã biết
+              </AlertDialogCancel>
             </AlertDialogFooter>
           </AlertDialogContent>
         </AlertDialog>
