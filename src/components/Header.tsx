@@ -64,7 +64,7 @@ export default function Header() {
                       href="#portfolio"
                       className="font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2"
                     >
-                      Portfolio
+                      Skill
                     </a>
                   </li>
                   <li className="service">
@@ -72,7 +72,7 @@ export default function Header() {
                       href="#service"
                       className="font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2"
                     >
-                      Service
+                      Travel
                     </a>
                   </li>
                   <li className="blog">
