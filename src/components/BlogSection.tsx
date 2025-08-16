@@ -27,6 +27,22 @@ const blogData: Blog[] = [
       `Mặc dù hiện tại chưa đạt được tất cả những gì mình mong đợi, nhưng mình vẫn tin rằng lựa chọn ngành Công nghệ thông tin là đúng đắn. Bởi hơn hết, công việc này mang lại cho mình niềm vui, và mình biết bản thân vẫn muốn gắn bó với nó lâu dài.`,
     ],
   },
+  //   {
+  //     id: 2,
+  //     img: "assets/img/anhsn.jpg",
+  //     date: "23",
+  //     month: "Dec",
+  //     category: "Tự sự",
+  //     title: "Tôi đã chọn ngành học như thế nào",
+  //     modalContent: [
+  //       `Hồi còn học lớp 12, mình thật sự chưa xác định rõ sẽ theo đuổi ngành nào. Ở tuổi đó, mình thường tự hỏi: “Mình thích gì? Mình cần gì? Và mình muốn học gì?”`,
+  //       `Trong nhiều suy nghĩ, mình nhận ra bản thân rất hứng thú với những hoạt động liên quan đến tin học trên lớp, chẳng hạn như làm PowerPoint hay Excel. Chính điều này đã gợi cho mình một ý tưởng: “Hay là mình chọn một ngành gì đó liên quan đến máy tính?”`,
+  //       `Từ sự tò mò đó, mình bắt đầu lên YouTube tìm hiểu. Và rồi, ngành Công nghệ thông tin xuất hiện như một lời giải đáp. Nó đúng với những gì mình tưởng tượng: được làm việc với máy tính, được tiếp xúc với công nghệ mới, và có cơ hội khám phá một thế giới rộng lớn.`,
+  //       `Sau 4 năm học tập, mình càng tin tưởng hơn vào lựa chọn của mình. Đây là một ngành mang đậm tính sáng tạo và đòi hỏi sự học hỏi không ngừng. Mình thích điều đó, bởi mỗi ngày đều là một cơ hội để khám phá thêm điều mới mẻ.`,
+  //       `Tất nhiên, hành trình không phải lúc nào cũng dễ dàng. Khi mới ra trường, mình từng cảm thấy khó khăn trong việc tìm việc làm, thậm chí đôi lúc tự hỏi: “Liệu mình có chọn đúng ngành không?” Thực tế, đi làm tại các công ty luôn có cả áp lực lẫn niềm vui. Nhưng chính những áp lực ấy lại trở thành động lực, giúp mình kiên trì bước tiếp.`,
+  //       `Mặc dù hiện tại chưa đạt được tất cả những gì mình mong đợi, nhưng mình vẫn tin rằng lựa chọn ngành Công nghệ thông tin là đúng đắn. Bởi hơn hết, công việc này mang lại cho mình niềm vui, và mình biết bản thân vẫn muốn gắn bó với nó lâu dài.`,
+  //     ],
+  //   },
 ];
 
 interface BlogModalProps {
