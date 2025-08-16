@@ -11,10 +11,10 @@ export default function HomeSection() {
         <div className="grid lg:grid-cols-2 items-center gap-[25px]">
           <div className="order-2 lg:order-1">
             <h3 className="text-custom text-[21px] text-center lg:text-left lg:text-[25px] xl:text-[45px] leading-[1.3] font-medium font-secondary">
-              Xin chào, tôi là
+              Xin chào, mình là
             </h3>
             <h1 className="text-[42px] lg:text-[60px] xl:text-[85px] text-center lg:text-left mb-[11px] lg:mb-[18px] leading-[1.3] font-medium font-secondary">
-              Bien Thanh Nhut
+              Thanh Nhut
             </h1>
             <p className="lg:mb-9 mb-[15px] text-lg lg:text-[19px] xl:text-[28px] text-center lg:text-left font-medium">
               Một lập trình viên
