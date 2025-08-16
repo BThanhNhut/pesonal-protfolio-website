@@ -18,14 +18,15 @@ export default function HomeSection() {
             </h1>
             <p className="lg:mb-9 mb-[15px] text-lg lg:text-[19px] xl:text-[28px] text-center lg:text-left font-medium">
               Một lập trình viên
-              <span className="text-[#1cbe59]"> Fontend</span>
+              <span className="text-[#1cbe59]"> Frontend</span>
             </p>
             <p className="lg:mb-[42px] text-gray-500 text-base text-center lg:text-left xl:text-[23px] leading-[1.5] max-w-[640px] mx-auto lg:ml-0">
-              Chào mừng bạn ghé thăm không gian cá nhân của tôi!, một người yêu
-              thích sáng tạo, khám phá và chia sẻ. Trang web này như một cuốn
-              nhật ký mở, nơi tôi viết về những hoạt động dự định và hành trình
-              mà tôi đang và sẽ đi qua, kế hoạch và những câu chuyện trên hành
-              trình đang tiếp diễn của mình. Cảm ơn vì đã ghé thăm!
+              Chào mừng bạn ghé thăm không gian cá nhân của mình, một người yêu
+              thích sáng tạo, khám phá và chia sẻ. Trang web này như một cuốn sổ
+              tay mở, nơi mình viết về những suy nghĩ rời rạc, ngẫu hứng của
+              mình, những hoạt động dự định và hành trình mà mình đang và sẽ đi
+              qua, kế hoạch và những câu chuyện trên hành trình đang tiếp diễn
+              của mình. Cảm ơn vì đã ghé thăm!
             </p>
 
             <div className="flex items-center justify-center lg:justify-start gap-[25px] mt-5">
