@@ -1,5 +1,7 @@
 "use client";
 import AboutSection from "@/components/AboutSection";
+import BlogSection from "@/components/BlogSection";
+import DemoSection from "@/components/DemoSection";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HomeSection from "@/components/HomeSection";
@@ -47,8 +49,10 @@ export default function Home() {
         <></>
       )}
       <Header />
-      <HomeSection></HomeSection>
+      <HomeSection />
       <AboutSection />
+      <BlogSection />
+      <DemoSection />
       <Footer />
     </>
   );
