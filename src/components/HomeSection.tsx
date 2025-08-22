@@ -5,7 +5,7 @@ export default function HomeSection() {
   return (
     <section
       id="home"
-      className="bg-[url('/assets/img/slider/1.jpg')] flex items-center dark:bg-[url('/assets/img/slider/2.html')] bg-center bg-cover lg:h-screen py-24 relative dizme_tm_header"
+      className="bg-[url('/assets/img/slider/1.jpg')] flex items-center bg-center bg-cover lg:h-screen py-24 relative dizme_tm_header"
     >
       <div className="container">
         <div className="grid lg:grid-cols-2 items-center gap-[25px]">

@@ -17,7 +17,7 @@ const blogData: Blog[] = [
     date: "23",
     month: "Dec",
     category: "Tự sự",
-    title: "Tôi đã chọn ngành học như thế nào",
+    title: "Mình đã chọn ngành học như thế nào",
     modalContent: [
       `Hồi còn học lớp 12, mình thật sự chưa xác định rõ sẽ theo đuổi ngành nào. Ở tuổi đó, mình thường tự hỏi: “Mình thích gì? Mình cần gì? Và mình muốn học gì?”`,
       `Trong nhiều suy nghĩ, mình nhận ra bản thân rất hứng thú với những hoạt động liên quan đến tin học trên lớp, chẳng hạn như làm PowerPoint hay Excel. Chính điều này đã gợi cho mình một ý tưởng: “Hay là mình chọn một ngành gì đó liên quan đến máy tính?”`,
@@ -27,22 +27,6 @@ const blogData: Blog[] = [
       `Mặc dù hiện tại chưa đạt được tất cả những gì mình mong đợi, nhưng mình vẫn tin rằng lựa chọn ngành Công nghệ thông tin là đúng đắn. Bởi hơn hết, công việc này mang lại cho mình niềm vui, và mình biết bản thân vẫn muốn gắn bó với nó lâu dài.`,
     ],
   },
-  //   {
-  //     id: 2,
-  //     img: "assets/img/anhsn.jpg",
-  //     date: "23",
-  //     month: "Dec",
-  //     category: "Tự sự",
-  //     title: "Tôi đã chọn ngành học như thế nào",
-  //     modalContent: [
-  //       `Hồi còn học lớp 12, mình thật sự chưa xác định rõ sẽ theo đuổi ngành nào. Ở tuổi đó, mình thường tự hỏi: “Mình thích gì? Mình cần gì? Và mình muốn học gì?”`,
-  //       `Trong nhiều suy nghĩ, mình nhận ra bản thân rất hứng thú với những hoạt động liên quan đến tin học trên lớp, chẳng hạn như làm PowerPoint hay Excel. Chính điều này đã gợi cho mình một ý tưởng: “Hay là mình chọn một ngành gì đó liên quan đến máy tính?”`,
-  //       `Từ sự tò mò đó, mình bắt đầu lên YouTube tìm hiểu. Và rồi, ngành Công nghệ thông tin xuất hiện như một lời giải đáp. Nó đúng với những gì mình tưởng tượng: được làm việc với máy tính, được tiếp xúc với công nghệ mới, và có cơ hội khám phá một thế giới rộng lớn.`,
-  //       `Sau 4 năm học tập, mình càng tin tưởng hơn vào lựa chọn của mình. Đây là một ngành mang đậm tính sáng tạo và đòi hỏi sự học hỏi không ngừng. Mình thích điều đó, bởi mỗi ngày đều là một cơ hội để khám phá thêm điều mới mẻ.`,
-  //       `Tất nhiên, hành trình không phải lúc nào cũng dễ dàng. Khi mới ra trường, mình từng cảm thấy khó khăn trong việc tìm việc làm, thậm chí đôi lúc tự hỏi: “Liệu mình có chọn đúng ngành không?” Thực tế, đi làm tại các công ty luôn có cả áp lực lẫn niềm vui. Nhưng chính những áp lực ấy lại trở thành động lực, giúp mình kiên trì bước tiếp.`,
-  //       `Mặc dù hiện tại chưa đạt được tất cả những gì mình mong đợi, nhưng mình vẫn tin rằng lựa chọn ngành Công nghệ thông tin là đúng đắn. Bởi hơn hết, công việc này mang lại cho mình niềm vui, và mình biết bản thân vẫn muốn gắn bó với nó lâu dài.`,
-  //     ],
-  //   },
 ];
 
 interface BlogModalProps {
@@ -55,48 +39,57 @@ function BlogModal({ isOpen, onClose, blog }: BlogModalProps) {
   if (!isOpen) return null;
   return (
     <>
-      <div className="fixed inset-0 z-40 bg-dark/90" onClick={onClose}></div>
-      <div className="fixed inset-0 z-50 flex justify-center items-center overflow-y-auto">
-        <div className="relative w-full my-10 mx-auto max-w-[968px] h-[calc(100vh-80px)] py-20">
-          <div className="rounded relative flex flex-col w-full pt-5 overflow-y-auto p-[50px] bg-white dark:bg-[#34353a] h-full scrollbar-thin scrollbar-thumb-dark/25 scrollbar-track-dark/10">
-            <div className="flex items-center justify-between pb-5">
-              <h3 className="text-2xl font-semibold">Chi tiết</h3>
-              <button className="ml-auto" onClick={onClose}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-7 h-7 dark:stroke-white stroke-dark"
+      {/* Overlay */}
+      <div className="fixed inset-0 z-40 bg-black/70" onClick={onClose}></div>
+
+      {/* Modal content */}
+      <div className="fixed inset-0 z-50 flex justify-center items-center">
+        <div className="relative w-full h-full sm:w-[90%] sm:h-[90%] max-w-[968px] bg-white dark:bg-[#34353a] rounded-none sm:rounded-xl overflow-y-auto">
+          {/* Header */}
+          <div className="flex items-center justify-between px-4 sm:px-8 py-4 border-b border-gray-200 dark:border-gray-700 sticky top-0 bg-white dark:bg-[#34353a] z-10">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">
+              Chi tiết
+            </h3>
+            <button className="ml-auto" onClick={onClose}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-6 h-6 sm:w-7 sm:h-7 dark:stroke-white stroke-dark"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+
+          {/* Body */}
+          <div className="px-4 sm:px-8 py-6">
+            <img
+              src={blog.img}
+              alt=""
+              className="h-[200px] sm:h-[300px] md:h-[350px] w-full object-cover rounded-lg"
+            />
+            <h3 className="text-custom2 mt-6 text-xl sm:text-2xl md:text-3xl font-medium">
+              {blog.title}
+            </h3>
+            <p className="font-secondary text-muted dark:text-darkmuted mt-1 text-sm sm:text-base">
+              {blog.category}
+            </p>
+            <div className="mt-5 space-y-4 sm:space-y-5">
+              {blog.modalContent.map((p, i) => (
+                <p
+                  key={i}
+                  className="text-muted dark:text-darkmuted text-sm sm:text-base leading-relaxed"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div>
-              <img
-                src={blog.img}
-                alt=""
-                className="h-[350px] w-full object-cover rounded-xl"
-              />
-              <h3 className="text-custom2 mt-[37px] text-[30px] font-medium">
-                {blog.title}
-              </h3>
-              <p className="font-secondary text-muted dark:text-darkmuted mt-1">
-                {blog.category}
-              </p>
-              <div className="mt-[23px] space-y-5">
-                {blog.modalContent.map((p, i) => (
-                  <p key={i} className="text-muted dark:text-darkmuted">
-                    {p}
-                  </p>
-                ))}
-              </div>
+                  {p}
+                </p>
+              ))}
             </div>
           </div>
         </div>
@@ -152,10 +145,10 @@ export default function BlogSection() {
         <div className="grid grid-cols-1">
           <div className="text-center max-w-[680px] mx-auto">
             <p className="text-custom text-[20px] md:text-2xl font-medium font-secondary">
-              Blog của tôi
+              Blog của mình
             </p>
             <h2 className="text-custom2 md:text-[48px] text-[35px] leading-[1.25] mb-[23px] mt-1.5">
-              Những bài viết mới nhất của mình
+              Những bài viết mới nhất
             </h2>
           </div>
         </div>
