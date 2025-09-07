@@ -8,6 +8,7 @@ type Blog = {
   category: string;
   title: string;
   modalContent: string[];
+  status: boolean;
 };
 
 const blogData: Blog[] = [
@@ -26,6 +27,17 @@ const blogData: Blog[] = [
       `Tất nhiên, hành trình không phải lúc nào cũng dễ dàng. Khi mới ra trường, mình từng cảm thấy khó khăn trong việc tìm việc làm, thậm chí đôi lúc tự hỏi: “Liệu mình có chọn đúng ngành không?” Thực tế, đi làm tại các công ty luôn có cả áp lực lẫn niềm vui. Nhưng chính những áp lực ấy lại trở thành động lực, giúp mình kiên trì bước tiếp.`,
       `Mặc dù hiện tại chưa đạt được tất cả những gì mình mong đợi, nhưng mình vẫn tin rằng lựa chọn ngành Công nghệ thông tin là đúng đắn. Bởi hơn hết, công việc này mang lại cho mình niềm vui, và mình biết bản thân vẫn muốn gắn bó với nó lâu dài.`,
     ],
+    status: true,
+  },
+  {
+    id: 2,
+    img: "assets/img/anhsn.jpg",
+    date: "1",
+    month: "Aug",
+    category: "Tự sự",
+    title: "Sinh nhật tuổi 23, một ngày đặc biệt đối với mình 🥰❤️",
+    modalContent: [],
+    status: false,
   },
 ];
 
@@ -107,11 +119,11 @@ function BlogCard({ blog, onClick }: BlogCardProps) {
   return (
     <div className="wow fadeInUp cursor-pointer" data-wow-duration="1s">
       <div onClick={onClick}>
-        <div className="overflow-hidden group rounded-xl relative">
+        <div className="overflow-hidden group rounded-xl relative h-[303px]">
           <img
             src={blog.img}
             alt=""
-            className="scale-100 rounded-xl object-cover w-full h-full min-h-[303px] duration-300 group-hover:scale-110"
+            className="rounded-xl object-cover w-full h-full scale-100 duration-300 group-hover:scale-110"
           />
           <div className="bg-[#1cbe59] top-[18px] right-[18px] absolute rounded-xl text-center py-3 px-5">
             <h3 className="text-2xl text-white leading-[1.2]">{blog.date}</h3>
@@ -158,7 +170,13 @@ export default function BlogSection() {
             <BlogCard
               key={blog.id}
               blog={blog}
-              onClick={() => setSelectedBlog(blog)}
+              onClick={() => {
+                if (!blog.status) {
+                  alert("Cần phải có quyền để có thể truy cập");
+                  return;
+                }
+                setSelectedBlog(blog);
+              }}
             />
           ))}
         </div>
